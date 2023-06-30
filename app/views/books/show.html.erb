@@ -1,9 +1,14 @@
-<div>
+<div class="flash_notice">
   <%= flash[:notice] %>
 </div>
 
+<!--投稿詳細-->
 <p><strong>Title:</strong> <%= @Book.title %></p>
 <p><strong>Body:</strong> <%= @Book.body %></p>
 
-<%= link_to 'Edit', edit_book_path(@Book.id) %>
-<%= link_to 'Back', '/books' %>
+<!--リンク-->
+<div class="link">
+  <%= link_to 'Edit', edit_book_path(@Book.id) %>
+  |
+  <%= link_to 'Back', '/books' %>
+</div>
