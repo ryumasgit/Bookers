@@ -3,7 +3,7 @@ require 'rails_helper'
 describe '投稿のテスト' do
   let!(:book) { create(:book,title:'hoge',body:'body') }
   describe 'トップ画面(root_path)のテスト' do
-    before do 
+    before do
       visit root_path
     end
     context '表示の確認' do
